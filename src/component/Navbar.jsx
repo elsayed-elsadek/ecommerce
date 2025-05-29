@@ -74,7 +74,7 @@ const Navbar = () => {
     <>
       <div className="bg-dark w-100 p-3">
         <div className="container d-flex justify-content-center align-items-center">
-          <p className="text-light m-auto">
+          <p className="notification text-light m-auto">
             {language === "English"
               ? "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!"
               : "عرض الصيف على جميع ملابس السباحة وتوصيل مجاني - خصم 50%! "}
@@ -100,7 +100,7 @@ const Navbar = () => {
 
       <nav className="navbar mt-2">
         <div className="container d-flex justify-content-between">
-          <Link to="/" className="fw-semibold fs-2 text-decoration-none text-black">
+          <Link to="/" className="logo fw-semibold fs-2 text-decoration-none text-black">
             {language === "English" ? "Exclusive" : "حصري"}
           </Link>
 

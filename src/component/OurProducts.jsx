@@ -80,7 +80,7 @@ const OurProducts = () => {
   }, []);
 
   if (loading) {
-    return <><h1 className="d-flex align-items-center justify-content-center" style={{ height: "50vh" }}>loading products.....</h1><hr /></>
+    return <><h5 className="d-flex align-items-center justify-content-center" style={{ height: "50vh" }}>loading products.....</h5><hr /></>
   }
   else
     return (

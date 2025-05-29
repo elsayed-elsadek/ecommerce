@@ -108,6 +108,9 @@ transform: scale(1.2);
   .userTools{
   right: -90% ;
 }
+.notification{
+  font-size: 12px;
+}
 }
 /* /Navbar */
 

@@ -92,7 +92,7 @@ const Bestselling = () => {
 
 
             {/* display products from json */}
-            <div className="d-flex flex-wrap justify-content-center justify-content-lg-between gap-5 my-5 ">
+            <div className="d-flex flex-wrap justify-content-center gap-5 my-5 ">
               {products.slice(10, 14).map((product) => (
                 <Link to={`/product/${product.id}`} key={product.id} className="text-black text-decoration-none">
                   <div className="product">
@@ -134,37 +134,37 @@ const Bestselling = () => {
               ))}
             </div>
 
-            <div className="row bg-black mb-5 " style={{ marginTop: "100px" }}>
-              <div className="col-md-6 col-sm-12 d-grid text-light p-5">
-                <p style={{ color: "#00FF66" }}>Categories</p>
+            <div className="row bg-black mb-5 rounded-2 " style={{ marginTop: "100px"}}>
+              <div className="col-md-6 col-sm-12 d-grid text-light p-4" >
+                <p className="mb-2" style={{ color: "#00FF66" }}>Categories</p>
                 <h1>Enhance Your Music Experience</h1>
                 {/* display counter time */}
-                <div className="d-flex my-3 flex-wrap">
+                <div className="d-flex my-3 flex-wrap ">
                   {Object.keys(timeLeft).map((unit, index) => (
                     <div className="bg-light m-2 text-black rounded-circle"
                       key={index}
                       style={{
                         textAlign: "center",
-                        padding: "10px",
-                        width: '70px',
-                        height: "70px"
+                        padding: "18px",
+                        width: '60px',
+                        height: "60px",
                       }}
                     >
-                      <p className=" fw-bold m-0 ">
+                      <p className=" fw-bold">
                         {timeLeft[unit].toString().padStart(2, "0")}
                       </p>
-                      <p style={{ fontSize: '12px' }}>
-                        {unit.charAt(0).toUpperCase() + unit.slice(1)}
-                      </p>
+                      {/* <p style={{ fontSize: '12px' }}>
+                        {unit.charAt(0).toUpperCase()}
+                      </p> */}
 
 
                     </div>
                   ))}
                 </div>
-                <Link to="/allproducts" className="btn w-50 text-light d-flex align-items-center justify-content-center" style={{ backgroundColor: '#00FF66' }}>Buy Now</Link>
+                <Link to="/allproducts" className="btn w-50 text-light d-flex align-items-center justify-content-center" style={{ backgroundColor: '#00FF66' , height:"50px"}}>Buy Now</Link>
               </div>
 
-              <div className="col-md-6 col-sm-12 ">
+              <div className="col-md-6 col-sm-12 h-100 m-auto">
                 <img className="w-100" src={BoomBox} alt="bomBoxImg" />
               </div>
 

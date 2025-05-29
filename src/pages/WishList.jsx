@@ -85,7 +85,7 @@ const WishlistPage = () => {
     <div className="container my-5">
       <div className="d-flex justify-content-between align-items-center my-5">
         <p>My Wishlist ({wishlist.length})</p>
-        <button className="btn btn-outline-dark">Move All To Bag</button>
+        <Link to={'/cart'} className="btn btn-outline-dark">Move All To Bag</Link>
       </div>
       {loading ? (
         <p>Loading...</p>
